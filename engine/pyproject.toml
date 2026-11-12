@@ -1,0 +1,18 @@
+[project]
+name = "guitartab-engine"
+version = "0.1.0"
+description = "Local monophonic guitar transcription engine"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "librosa==0.11.0",
+  "numpy>=1.26,<3",
+  "soundfile>=0.13,<0.14",
+  "imageio-ffmpeg>=0.6,<0.7",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<9", "pyinstaller>=6,<7"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

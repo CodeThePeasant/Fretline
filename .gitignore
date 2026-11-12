@@ -1,0 +1,22 @@
+.build/
+.swiftpm/
+dist/
+engine/.venv/
+engine/build/
+engine/dist/
+engine/*.spec
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.DS_Store
+
+# Local recordings, evaluation outputs, and saved projects
+evaluations/
+*.guitartab/
+*.log
+
+# Local environment files and generated icon intermediates
+.env
+.env.*
+!.env.example
+assets/Fretline.iconset/
